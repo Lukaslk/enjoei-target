@@ -10,4 +10,4 @@ Um API criada conforme solicitado pelo teste da Enjoei
 
 # Aplication
 
- ![API](https://github.com/Lukaslk/enjoei-target/blob/main/20220206_180057.gif) 
+ ![API](https://github.com/Lukaslk/enjoei-target/blob/main/20220206_184232.gif) 
