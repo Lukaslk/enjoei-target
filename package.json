@@ -2,9 +2,12 @@
   "name": "teste",
   "version": "1.0.0",
   "description": "",
-  "main": "fibonacci.js",
+  "main": "index.js",
+  "engine": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
