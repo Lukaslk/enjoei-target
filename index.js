@@ -10,6 +10,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('./assets/js'))
 app.use(express.static('./assets/css'))
+app.use(express.static('./assets/image'))
 
 app.use('/', testeController)
 

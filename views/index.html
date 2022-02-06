@@ -1,91 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+<%- include('./partials/head') %>
 <body>
+    <%- include('./partials/header') %>
 
-    <div>
-        <h1>Inverter texto</h1>
-        <input id="reverse" type="text">
-        <button id="btn__invert">Inverter</button>
-        <div id="conteudo"></div>
-    </div>
-
-    <div>
-        <h1>Verifica se numero pertence a Fibonacci</h1>
-        <p>Numero que deseja verificar se tem</p>
-        <input id="numFibonacci" type="number">
-        <p>Tamanho da sequência</p>
-        <input id="seqFibonacci" type="number"><br><br>
-        <button id="btn__fibonacci">Verificar</button>
-        <div id="print"></div>
-    </div>
-
-    <div>
-        <h1>Valor do faturamento mensal</h1>
-        <button id="btn__display">Mostrar resultado do Mês</button>
-        <section id="show"><br>
-            <% result.forEach(r => { %>
-                <tr>
-                    <td>Dia <%= r.dia %>: <%= r.valor %> </td><br>
-                </tr>
-            <% }) %>
-        </section><br>
-    </div>
-    <div>
-        <h1>Menor Valor do faturamento mensal</h1>
-        <button id="btn__display2">Mostrar resultado do Mês</button>
-        <section id="show2"><br>
-            <% lowerValue.forEach(r => { %>
-                <tr>
-                    <td>Dia <%= r.dia %>: <%= r.valor %> </td><br>
-                </tr>
-            <% }) %>
-        </section><br>
-    </div>
-    <div>
-        <h1>Maior Valor do faturamento mensal</h1>
-        <button id="btn__display3">Mostrar resultado do Mês</button>
-        <section id="show3"><br>
-            <% HighestValue.forEach(r => { %>
-                <tr>
-                    <td>Dia <%= r.dia %>: <%= r.valor %> </td><br>
-                </tr>
-            <% }) %>
-        </section><br>
-    </div>
-    <div>
-        <h1>Valores acima da média do faturamento mensal</h1>
-        <button id="btn__display4">Mostrar resultado do Mês</button>
-        <section id="show4"><br>
-        <h2>Valor médio R$ <%= d.division %></h2>
-        <h3>Valores acima</h3>
-            <% aboveAverage.forEach(r => { %>
-                <tr>
-                    <td>Dia <%= r.dia %>: <%= r.valor %> </td><br>
-                </tr>
-            <% }) %>
-        </section><br>
-    </div>
-    <div>
-        <h1>Percentua recebido por Estado</h1>
-        <button id="btn__display5">Mostrar resultado do Mês</button>
-        <section id="show5"><br>
-            <h2>Valor total R$ <%= total.total %></h2>
-            <% percent.forEach(r => { %>
-                <tr>
-                    <td><%= r.porcentage.estado %>: %<%= r.porcentage.valor %> </td><br>
-                    
-                </tr>
-            <% }) %>
-        </section><br>
-    </div>
-
+    <main>
+        <div>
+            <h1 class="title">Inverter texto</h1>
+            <input id="reverse" type="text">
+            <button id="btn__invert">Inverter</button>
+            <div id="conteudo"></div>
+        </div>
+    
+        <div>
+            <h1 class="title">Verifica se numero pertence a Fibonacci</h1>
+            <p>Numero que deseja verificar se tem</p>
+            <input id="numFibonacci" type="number">
+            <p>Tamanho da sequência</p>
+            <input id="seqFibonacci" type="number"><br><br>
+            <button id="btn__fibonacci">Verificar</button>
+            <div id="print"></div>
+        </div>
+    </main>
+<script src="responsiveMobile.js"></script>
 <script src="invertText.js"></script>
 <script src="fibonacci.js"></script>
 <script src="ocultShow.js"></script>

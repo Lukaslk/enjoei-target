@@ -1,0 +1,57 @@
+<%- include('./partials/head') %>
+<body>
+    <%- include('./partials/header') %>
+
+    <main>
+        <div>
+            <h1>Valor do faturamento mensal</h1>
+            <button class="btn__display" value="1">Mostrar resultado do Mês</button>
+            <section class="show1"><br>
+                <% result.forEach(r => { %>
+                    <tr>
+                        <td>Dia <%= r.dia %>: <%= r.valor %> </td><br>
+                    </tr>
+                <% }) %>
+            </section><br>
+        </div>
+        <div>
+            <h1>Menor Valor do faturamento mensal</h1>
+            <button class="btn__display" value="2">Mostrar resultado do Mês</button>
+            <section class="show2"><br>
+                <% lowerValue.forEach(r => { %>
+                    <tr>
+                        <td>Dia <%= r.dia %>: <%= r.valor %> </td><br>
+                    </tr>
+                <% }) %>
+            </section><br>
+        </div>
+        <div>
+            <h1>Maior Valor do faturamento mensal</h1>
+            <button class="btn__display" value="3">Mostrar resultado do Mês</button>
+            <section class="show3"><br>
+                <% HighestValue.forEach(r => { %>
+                    <tr>
+                        <td>Dia <%= r.dia %>: <%= r.valor %> </td><br>
+                    </tr>
+                <% }) %>
+            </section><br>
+        </div>
+        <div>
+            <h1>Valores acima da média do faturamento mensal</h1>
+            <button class="btn__display" value="4">Mostrar resultado do Mês</button>
+            <section class="show4"><br>
+            <h2>Valor médio R$ <%= d.division %></h2>
+            <h3>Valores acima</h3>
+                <% aboveAverage.forEach(r => { %>
+                    <tr>
+                        <td>Dia <%= r.dia %>: <%= r.valor %> </td><br>
+                    </tr>
+                <% }) %>
+            </section><br>
+        </div>
+    </main>
+
+<script src="responsiveMobile.js"></script>
+<script src="ocultShow.js"></script>
+</body>
+</html>
