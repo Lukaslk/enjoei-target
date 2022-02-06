@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const testeController = require('./controller/testeController')
 
-app.use(express.json())
+app.use(express.json({ extended: false }));
 
 app.set('views', './views');
 app.engine('html', require('ejs').renderFile);
@@ -14,4 +14,4 @@ app.use(express.static('./assets/image'))
 
 app.use('/', testeController)
 
-app.listen('3000', () => console.log("Servidor rodando na porta 3000"))
+app.listen('4000', () => console.log("Servidor rodando na porta 3000"))
