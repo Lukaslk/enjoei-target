@@ -6,5 +6,5 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [{ "src": "/atom\\.xml", "dest": "/api/rss" }]
+    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
