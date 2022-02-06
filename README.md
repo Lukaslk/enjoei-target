@@ -6,7 +6,8 @@ Um API criada conforme solicitado pelo teste da Enjoei
 
 1. Faça o download ou clone este repositório;
 2. Abra seu Terminal/Prompt e navegue até o diretório em que foi depositado;
-3. Inicie o server com "node server.js";
+3. Execute npm install para baixar as dependências usadas;
+4. Inicie o server com "node index.js".
 
 # Aplication
 
